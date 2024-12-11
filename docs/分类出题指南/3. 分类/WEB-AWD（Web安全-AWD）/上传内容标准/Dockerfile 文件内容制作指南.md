@@ -2,9 +2,9 @@
 文件下载
 ----
 
-[docker-web(来源dasctfbase)-awdp.zip](../%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/docker-web(%E6%9D%A5%E6%BA%90dasctfbase)-awdp.)
+[docker-web(官方镜像源)-awdp.zip](docker-web(官方镜像源)-awdp.zip)
 
-[docker-web(来源dasctfbase).zip](../../WEB%EF%BC%88Web%E5%AE%89%E5%85%A8%EF%BC%89/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/docker-web(%E6%9D%A5%E6%BA%90dasctfbase).zip)
+[docker-web(来源dasctfbase).zip](docker-web(来源dasctfbase)-awdp.zip)
 
 和 WEB 题的不同
 ----------

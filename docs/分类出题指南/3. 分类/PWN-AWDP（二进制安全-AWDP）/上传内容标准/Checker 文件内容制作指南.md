@@ -2,7 +2,7 @@
 文件下载
 ----
 
-[Checker.zip](../../WEB-AWDP%EF%BC%88Web%E5%AE%89%E5%85%A8-AWDP%EF%BC%89/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/Checker.zip)
+[Checker.zip](Checker.zip)
 
 文件包结构
 -----
