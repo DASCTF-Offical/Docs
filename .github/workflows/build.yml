@@ -31,7 +31,7 @@ jobs:
       - name: Backup build files
         run: |
           mkdir -p backup
-          cp -r docs/.vitepress/dist/* backup/
+          cp -r docs/.vitepress/dist/* /tmp/backup/
       - name: Deploy to deploy branch
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -41,7 +41,7 @@ jobs:
           git checkout deploy || git checkout --orphan deploy
           git rm -rf .
           rm -rf *
-          cp -r backup/* .
+          cp -r /tmp/backup/* .
           git add --all
           git commit -m 'Deploy'
           git push origin deploy --force
