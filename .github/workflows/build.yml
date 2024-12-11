@@ -30,7 +30,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: Backup build files
         run: |
-          mkdir -p backup
+          mkdir -p /backup/
           cp -r docs/.vitepress/dist/* /backup/
       - name: Deploy to deploy branch
         run: |
