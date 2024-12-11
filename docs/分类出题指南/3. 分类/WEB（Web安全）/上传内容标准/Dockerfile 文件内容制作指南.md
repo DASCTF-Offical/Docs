@@ -11,7 +11,7 @@
 
 文件包内应确保具有如下的文件。
 
-![](Dockerfile 文件内容制作指南_image.png)
+![](Dockerfile%20%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97_image.png)
 
 1.  docker-compose.yml – Docker-Compose 描述文件
 2.  web1 – 服务构建文件，下有 Dockerfile 和构建所需的文件等

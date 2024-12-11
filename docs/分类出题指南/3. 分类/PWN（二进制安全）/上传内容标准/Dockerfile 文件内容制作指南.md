@@ -9,7 +9,7 @@
 
 文件包内应确保具有如下的文件。
 
-![](2_Dockerfile 文件内容制作指南_image.png)
+![](2_Dockerfile%20%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97_image.png)
 
 1.  docker-compose.yml – Docker-Compose 描述文件
 2.  pwn1 – 服务构建文件，下有 Dockerfile 和构建所需的文件等
@@ -55,7 +55,7 @@ entrypoint.sh 样例如下：
 
 需要将pwn程序依赖的ld\*和所有的lib\*放到challenge目录下，无需手动patch。具体是哪些文件可使用ldd命令查看：
 
-![](3_Dockerfile 文件内容制作指南_image.png)
+![](3_Dockerfile%20%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97_image.png)
 
 Dockerfile 样例如下：
 
