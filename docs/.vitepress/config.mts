@@ -9,6 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     // nav,
     // sidebar,
+    lastUpdated: true,
 
     socialLinks: [
       { icon: {
@@ -16,6 +17,10 @@ export default defineConfig({
       }, link: 'https://qm.qq.com/q/2TQahEworK' },
       { icon: 'github', link: 'https://github.com/DASCTF-Offical' }
     ],
+
+    editLink: {
+      pattern: 'https://github.com/DASCTF-Offical/Docs/edit/main/docs/:path'
+    },
 
     search: {
       provider: 'local'
