@@ -30,8 +30,8 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: Backup build files
         run: |
-          mkdir -p /backup/
-          cp -r docs/.vitepress/dist/* /backup/
+          mkdir -p /tmp/backup/
+          cp -r docs/.vitepress/dist/* /tmp/backup/
       - name: Deploy to deploy branch
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -41,7 +41,7 @@ jobs:
           git checkout --orphan deploy
           git reset --hard
           git clean -fdx
-          cp -r /backup/* .
+          cp -r /tmp/backup/* .
           git add --all
           git commit -m 'Deploy'
           git push origin HEAD:deploy --force
