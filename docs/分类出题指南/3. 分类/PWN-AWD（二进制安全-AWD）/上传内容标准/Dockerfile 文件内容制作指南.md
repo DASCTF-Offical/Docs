@@ -7,7 +7,7 @@
 和 PWN 题的不同
 ----------
 
-把 SSH 打开，账号 **ctf（运维账户，给到程序文件的修改权限）**，密码 1qazcde3!@#。原因：**flag文件需要保留，接收 DASFLAG 作为flag，因为这个靶机既要作为攻击靶机（SSH信息不展示），也要作为防守靶机（SSH信息要展示）。**
+把 SSH 打开，账号 **ctf（运维账户，给到程序文件的修改权限）**，密码 1qazcde3!@#。原因：**flag文件需要保留，接收 DASFLAG 作为flag，因为这个靶机既要作为攻击靶机（SSH信息不展示），也要作为防守靶机（SSH信息要展示）。**
 
 文件包结构
 -----
@@ -50,7 +50,7 @@ pwn1
 
 Dockerfile 内容参考样例如下：
 
-1.样例1 
+1.样例1 
 
 ```
 FROM ubuntu:22.04
@@ -115,7 +115,7 @@ EXPOSE 22
 
 1\. FROM 的基础镜像只允许是：
 
-1.   Dockerhub上不带 / 的官方镜像
+1.   Dockerhub上不带 / 的官方镜像
 2.  dasctfbase 组织下的镜像，比如 `dasctfbase/web_php73_apache_mysql` 等
 3.  love-image.dasctf.com 里的镜像
     

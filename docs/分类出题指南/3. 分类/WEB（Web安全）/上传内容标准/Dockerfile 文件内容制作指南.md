@@ -49,7 +49,7 @@ web1
 
 Dockerfile 内容参考样例如下：
 
-1.样例1 
+1.样例1 
 
 ```
 # 只允许使用下文中限定的镜像
@@ -122,7 +122,7 @@ EXPOSE 80
 
 1\. FROM 的基础镜像只允许是：
 
-1.   Dockerhub上不带 / 的官方镜像
+1.   Dockerhub上不带 / 的官方镜像
 2.  dasctfbase 组织下的镜像，比如 `dasctfbase/web_php73_apache_mysql` 等
 3.  love-image.dasctf.com 里的镜像
     

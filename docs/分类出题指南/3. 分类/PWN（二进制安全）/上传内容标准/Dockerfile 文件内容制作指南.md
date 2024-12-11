@@ -72,7 +72,7 @@ COPY ./challenge/ /root/challenge
 
 1\. FROM 的基础镜像只允许是：
 
-1.   Dockerhub上不带 / 的官方镜像
+1.   Dockerhub上不带 / 的官方镜像
 2.  官方组织下的镜像，比如 `ghcr.io/dasctf-offical/`等
     
 
