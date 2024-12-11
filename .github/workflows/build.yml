@@ -28,6 +28,10 @@ jobs:
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: Backup build files
+        run: |
+          mkdir -p backup
+          cp -r docs/.vitepress/dist/* backup/
       - name: Deploy to deploy branch
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -37,7 +41,7 @@ jobs:
           git checkout --orphan deploy
           git reset --hard
           git clean -fdx
-          cp -r docs/.vitepress/dist/. .
+          cp -r backup/* .
           git add --all
           git commit -m 'Deploy'
           git push origin HEAD:deploy --force
