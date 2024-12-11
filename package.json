@@ -1,0 +1,23 @@
+{
+  "name": "love-wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shikijs/vitepress-twoslash": "^1.24.2",
+    "vitepress": "^1.5.0"
+  },
+  "dependencies": {
+    "vite-plugin-vitepress-auto-sidebar": "^1.7.0",
+    "vitepress-auto-nav-sidebar": "^0.1.1"
+  }
+}
