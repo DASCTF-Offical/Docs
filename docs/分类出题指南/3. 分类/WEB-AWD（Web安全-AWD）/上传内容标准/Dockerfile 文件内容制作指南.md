@@ -16,7 +16,7 @@
 
 文件包内应确保具有如下的文件。
 
-![](api/attachments/fh7XvM4ur8gs/image/image.png)
+![](dockerfile_image.png)
 
 1.  docker-compose.yml – Docker-Compose 描述文件
 2.  web1 – 服务构建文件，下有 Dockerfile 和构建所需的文件等
