@@ -33,7 +33,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git remote set-url origin git@github.com:${{ github.repository }}.git
+          git fetch origin
           git checkout --orphan deploy
-          git --work-tree=docs/.vitepress/dist add --all
-          git --work-tree=docs/.vitepress.dist commit -m 'Deploy'
+          git reset --hard
+          git clean -fdx
+          cp -r docs/.vitepress/dist/. .
+          git add --all
+          git commit -m 'Deploy'
           git push origin HEAD:deploy --force
