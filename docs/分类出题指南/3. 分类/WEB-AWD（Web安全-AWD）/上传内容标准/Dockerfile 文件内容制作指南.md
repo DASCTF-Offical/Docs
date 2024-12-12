@@ -155,7 +155,7 @@ EXPOSE 80 22
 
 1.   Dockerhub上不带 / 的官方镜像
 2.  dasctfbase 组织下的镜像，比如 `dasctfbase/web_php73_apache_mysql` 等
-3.  love-image.dasctf.com 里的镜像
+3. https://github.com/orgs/DASCTF-Offical/packages 里的镜像，也就是 ghcr.io/dasctf-offical/ 开头的镜像
     
 
 **其他镜像一律不允许使用。**
