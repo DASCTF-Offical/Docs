@@ -9,7 +9,7 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "documate:upload": "documate upload",
-    "documate:clean": "documate upload"
+    "documate:clean": "documate clean"
   },
   "keywords": [],
   "author": "",
