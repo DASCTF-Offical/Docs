@@ -23,8 +23,9 @@ jobs:
       - name: Build
         run: |
           npm run docs:build
-          npm run documate:clean -t "${{ secrets.DEPLOY_KEY }}"
-          npm run documate:upload -t "${{ secrets.DEPLOY_KEY }}"
+          export DOCUMATE_TOKEN="${{ secrets.DOCUMATE_TOKEN }}"
+          npm run documate:clean
+          npm run documate:upload
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
