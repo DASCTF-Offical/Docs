@@ -23,8 +23,8 @@ jobs:
       - name: Build
         run: |
           npm run docs:build
-          documate clean
-          documate upload
+          npm run documate:clean
+          npm run documate:upload
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
