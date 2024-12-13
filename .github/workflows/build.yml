@@ -21,7 +21,10 @@ jobs:
           cache: npm
       - run: npm install
       - name: Build
-        run: npm run docs:build
+        run: |
+          npm run docs:build
+          npm run documate:clean
+          npm run documate:upload
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
