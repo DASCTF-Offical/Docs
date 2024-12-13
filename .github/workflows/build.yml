@@ -26,6 +26,7 @@ jobs:
           export DOCUMATE_TOKEN="${{ secrets.DOCUMATE_TOKEN }}"
           npm run documate:clean
           npm run documate:upload
+          export DOCUMATE_TOKEN=""
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
