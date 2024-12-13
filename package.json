@@ -18,7 +18,7 @@
     "vitepress": "^1.5.0"
   },
   "dependencies": {
-    "@glzjin/documate": "^0.2.3",
+    "@glzjin/documate": "^0.2.6",
     "@glzjin/documate_vue": "^0.3.16",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.0",
     "vitepress-auto-nav-sidebar": "^0.1.1"
