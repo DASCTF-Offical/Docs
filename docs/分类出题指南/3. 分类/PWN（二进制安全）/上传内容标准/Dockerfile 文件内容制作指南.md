@@ -12,7 +12,7 @@
 ![](2_Dockerfile%20%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97_image.png)
 
 1.  docker-compose.yml – Docker-Compose 描述文件
-2.  pwn1 – 服务构建文件，下有 Dockerfile 和构建所需的文件等
+2.  pwn1 – 服务构建文件夹，下有 Dockerfile文件和构建所需的challenge文件夹
 
 docker-compose.yml
 ------------------
@@ -37,10 +37,9 @@ services:
 
 **ports 里映射的镜像端口请务必保证正确！**
 
-pwn1
+challenge文件夹
 ----
 
-服务构建文件，下有 Dockerfile 和构建所需的文件等。
 
 challenge作为子文件夹里面存放entrypoint.sh脚本、pwn程序和其依赖的动态链接库(ld\*和lib\*)。
 
@@ -57,8 +56,10 @@ entrypoint.sh 样例如下：
 
 ![](3_Dockerfile%20%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97_image.png)
 
-Dockerfile 样例如下：
+Dockerfile 文件
+----
 
+非特殊原因，请勿修改 Dockerfile 内容。
 ```
 FROM ghcr.io/dasctf-offical/docker-template-for-pwn-base:main
 
@@ -68,7 +69,10 @@ COPY ./challenge/ /root/challenge
 # 基础镜像默认对外暴露9999端口
 ```
 
-需要特别注意几点：
+其他注意事项
+----
+
+如果使用另外的 Dockerfile ，需要特别注意几点：
 
 1\. FROM 的基础镜像只允许是：
 
