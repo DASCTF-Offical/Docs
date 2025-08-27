@@ -2,9 +2,9 @@
 文件下载
 ----
 
-[docker-web(官方镜像源)-awdp.zip](../文件下载/docker-web(官方镜像源)-awdp.zip)
+[docker-web(官方镜像源)-awdp.zip](/分类出题指南/3.%20分类/WEB-AWD（Web安全-AWD）/文件下载/docker-web(官方镜像源)-awdp.zip)
 
-[docker-web(来源dasctfbase).zip](../文件下载/docker-web(来源dasctfbase)-awdp.zip)
+[docker-web(来源dasctfbase).zip](/分类出题指南/3.%20分类/WEB-AWDP（Web安全-AWDP）/文件下载/docker-web(来源dasctfbase)-awdp.zip)
 
 和 WEB 题的不同
 ----------
